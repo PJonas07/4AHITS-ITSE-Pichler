@@ -1,0 +1,5 @@
+Arbeitsbericht
+Name: Jonas Pichler
+Fach: ITSE Übungen
+Klasse: 4AHTIS
+Datum: 13.10.2025
