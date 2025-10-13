@@ -1,0 +1,44 @@
+# Arbeitsbericht    
+Name: Jonas Pichler   
+Fach: ITSE Übungen  
+Klasse: 4AHTIS   
+Datum: 6.10.2025   
+
+## Kali und Metasploitable herunterladen
+- Dateien auf dem Pc entpacken
+- VMWare öffnen und die virtuellen Machinen im Bridged Mode starten
+
+## Visual Studio Code in Kali herunterladen
+Folgende Befehle:
+```
+sudo apt update      //Kontrolliert, ob es Updates gibt
+sudo apt install     //Installiert die neusten Updates
+
+sudo apt install code-oss  //Installiert Visual Studio
+```
+
+## Git Repository auf Kali klonen und eine Datei verändern
+- 'git clone <Repository-url>' klont das Repository auf das Kali Linux
+- Mit 'code . ' VS aufmachen und über Open File die Datei aus Git auswählen
+- Änderung an der Datei vornehmen -> Speichern und wieder zur Kali Shell zurück
+- Mit cd in das git verzeichnis wechseln und dann folgende Befehle ausführen
+```
+Git add <filename.md>
+Git commit -m „Update“
+Git push
+```
+- Bei dem letzten Befehl funktioniert das normale Passwort nicht. Man muss sich einen 
+
+## Fine-grained Personal access token erstellen
+https://github.com/settings/tokens 
+- Generate new token
+- Token name eingeben
+- Auf "All repositories" stellen
+- Add permission "contents" auswählen und dann auf read and write umstellen
+- Generate token drücken und den Schlüssel kopieren
+- Diesen Schlüssel muss man dann als Passwort benutzen
+
+## Änderung in der Git Hub Oberfläche
+- Ändere ein File in der Git Hub Oberfläche 
+- Bei Kali vollgenden Befehl ausführen: 'git pull'   //aktualisiert das Repositorie
+- Dann mit 'code . ' nachsehen 
