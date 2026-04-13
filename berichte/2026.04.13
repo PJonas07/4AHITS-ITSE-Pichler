@@ -11,6 +11,20 @@ Datum: 13.04.2026
 ### Angabe
 Verwende netcat um einen bidirektionalen Chat zwischen 2 unterschiedlichen Rechnern aufzubauen.
 
+Ip Adresse des von beiden mit "ip a" herausfinden. Beide müssen in Brigded sein. David war im Labor Netz 15 und ich im 16. Dann folgenden Befehl hernehmen
+```
+nc -lvp 4444
+```
+Dann musste nur ich noch den Befehl 
+```
+nc <ip-adresse> 4444
+
+In meinem Fall 
+nc 192.168.15.51 4444
+```
+Dann ist man auch schon in dem Chat und kann schreiben 
+Sicht von David 
+
 
 ## Übung (netcat data send)
 ### Angabe
