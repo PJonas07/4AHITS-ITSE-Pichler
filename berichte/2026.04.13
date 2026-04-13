@@ -1,7 +1,47 @@
 # Arbeitsbericht 
-# 1. VNC Exploitation
+# 1. Reverse Shells Übungen
 
 Name: Jonas Pichler   
 Fach: ITSE Übungen   
 Klasse: 4AHTIS   
-Datum: 29.03.2026   
+Datum: 13.04.2026   
+[]https://www.franzmatejka.at/htl/doc/ITSI_4/lab/12_reverse_shell_ue.html 
+
+## Übung (netcat chat)
+### Angabe
+Verwende netcat um einen bidirektionalen Chat zwischen 2 unterschiedlichen Rechnern aufzubauen.
+
+
+## Übung (netcat data send)
+### Angabe
+Übertrage, per netcat, den Inhalt einer lokalen Text-Datei an einen anderen Schüler (auf einem anderen Rechner). Soll am Zielsystem in einer Textdatei gespeichert werden.
+
+## Übung (netcat banner grabbing)
+### Angabe
+Verbinde dich mit netcat mit einem Webserver (Metasploitable und http://example.com) auf dem Standard-HTTP-Port 80.
+
+Nachdem die Verbindung hergestellt ist, gibst du manuell die HTTP-Anfrage ein und beendest sie mit zweimaligem Enter.
+
+HEAD / HTTP/1.0
+[Leere Zeile]
+[Leere Zeile]
+
+Analysiere die Antwort des Servers, insbesondere die Zeile, die mit Server: beginnt.
+Verbinde dich mit 10 unterschiedlichen Web-Seiten. Welche Server werden verwendet? Informiere dich kurz über diese.
+
+Welchen Web-Server verwendet die HTL Braunau?
+
+
+
+
+## Übung (netcat banner grabbing II)
+### Angabe
+Erweitere das Kommando aus der vorhergehenden Übung so, dass die HTTP-Anfrage (Request) nicht über stdin eingegeben werden muss sondern per pipe | an nc übergeben wird.
+
+Hinweis:
+
+Die leere Zeile ist im HTTP Protokoll als die Zeichenfolge CRLF definiert.
+
+CR (Carriage Return): Steuerzeichen mit ASCII-Wert dezimal 13 oder hexadezimal 0x0D – \r in Programmen.
+LF (Line Feed): Steuerzeichen mit ASCII-Wert dezimal 10 oder hexadezimal 0x0A – \n in Programmen.
+Verwende das Tool printf (statt echo) um \r\n verwenden zu können.
